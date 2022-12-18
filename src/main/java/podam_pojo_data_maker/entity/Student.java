@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 import podam_pojo_data_maker.strategy.NameStrategy;
-import uk.co.jemos.podam.common.PodamCollection;
-import uk.co.jemos.podam.common.PodamIntValue;
-import uk.co.jemos.podam.common.PodamStrategyValue;
-import uk.co.jemos.podam.common.PodamStringValue;
+import uk.co.jemos.podam.common.*;
 
 import java.util.List;
 import java.util.Map;
@@ -16,9 +13,11 @@ import java.util.Map;
 @Data
 public class Student {
 
-    @PodamIntValue(minValue = 0, maxValue = 100)
+    @PodamExclude
+    @PodamIntValue(minValue = 1, maxValue = 100)
     private int id;
 
+    @PodamExclude
     @PodamStrategyValue(value = NameStrategy.class)
     @PodamStringValue(length = 6)
     private String firstName;
