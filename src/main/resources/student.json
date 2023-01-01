@@ -1,4 +1,21 @@
 {
-  "id": 5,
-  "firstName": "testing"
+  "country": "Ukraine",
+  "people": [
+    {
+      "id": 1,
+      "firstName": "Eugene"
+    },
+    {
+      "id": 2,
+      "firstName": "Natalia"
+    },
+    {
+      "id": 3,
+      "firstName": "Yan"
+    },
+    {
+      "id": 4,
+      "firstName": "Anton"
+    }
+  ]
 }
